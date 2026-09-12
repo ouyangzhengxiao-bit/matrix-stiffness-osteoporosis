@@ -1,0 +1,30 @@
+{
+  "status": "post_hoc_method_sensitivity",
+  "normalization": "author-provided TPM BigWig; log1p",
+  "force_plus": {
+    "comparison": "force_plus",
+    "n_positive": 92,
+    "n_negative": 95,
+    "genomewide_mean_log1p_TPM_delta": 0.10295587347214526,
+    "positive_mean": 0.07182668849515819,
+    "negative_mean": 0.08259352571318672,
+    "directional_score": -0.010766837218028527,
+    "matched_null_mean": -0.008135337484646059,
+    "matched_null_sd": 0.007708508733817051,
+    "expected_alternative": "greater",
+    "one_sided_permutation_p": 0.6328183590820459
+  },
+  "soft_force_minus": {
+    "comparison": "soft_force_minus",
+    "n_positive": 92,
+    "n_negative": 95,
+    "genomewide_mean_log1p_TPM_delta": -0.12598187841485622,
+    "positive_mean": -0.09844784778598563,
+    "negative_mean": -0.1024517303670039,
+    "directional_score": 0.004003882581018275,
+    "matched_null_mean": 0.008124302075147716,
+    "matched_null_sd": 0.005822063945658065,
+    "expected_alternative": "less",
+    "one_sided_permutation_p": 0.23843807809609519
+  }
+}

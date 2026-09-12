@@ -1,0 +1,14 @@
+accession,source,dimension,stiffness_or_comparison,time,sample_size,role
+GSE193021,Human BM-MSC,2D,0.5 vs 32 kPa,"Days 3, 7",3/group,Primary meta-analysis
+GSE181512,Rat BM-MSC,3D,2 vs 18 kPa,48 h,3/group,Primary meta-analysis
+GSE226411,Human BM-MSC,3D,Soft vs stiff,Not reported,3/group,Primary meta-analysis
+GSE288678,Human BM-MSC,2D,150 vs 900 kPa,48 h; 3 ECMs,4/cell,Primary meta-analysis
+GSE55867,Human MSC,2D,1.5 vs 50 kPa,Long-term,3 paired donors,Primary meta-analysis
+GSE255574,Human BM-MSC,3D,"150 vs 2,000 Pa","24, 48 h",3/level,Primary meta-analysis
+GSE310514,Rat BM-MSC,2D,2 vs 100 kPa,"Passages 1, 3, 5",2-3/group,Primary/meta memory
+GSE166824,Human BM-MSC,2D,2 vs 25 kPa,"Days 3, 6","1 donor; 2,790 cells",External descriptive
+GSE22011,Human fibroblast,2D,"100-25,600 Pa",Dose response,3 donors,External cell type
+GSE152708,Mouse cortical bone,In vivo,Measured bending,Cross-sectional,187 mice,Bone validation
+GSE35958,Human BM-MSC,In vivo disease,Primary OP vs control,Cross-sectional,5 vs 4,Disease validation
+GSE230665,Human femur,In vivo disease,PMOP vs control,Cross-sectional,12 vs 3,Disease validation
+GSE276529,Human cortical bone,In vivo disease,GIOP vs control,Cross-sectional,5 vs 4,Disease validation

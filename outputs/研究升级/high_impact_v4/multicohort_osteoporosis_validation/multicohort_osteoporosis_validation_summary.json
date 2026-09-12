@@ -1,0 +1,107 @@
+{
+  "cohorts": [
+    {
+      "cohort": "GSE156508",
+      "n_control": 6,
+      "n_case": 6,
+      "shared_genes": 11580,
+      "allocations": 924,
+      "abs_rho": 0.025406691069961292,
+      "abs_exact_one_sided_p": 0.030303030303030304,
+      "signed_rho": 0.05177886973190447,
+      "signed_exact_two_sided_p": 0.36147186147186144,
+      "signature_difference": 0.013400308289761687,
+      "signature_exact_two_sided_p": 0.22294372294372294,
+      "signature_up": 85,
+      "signature_down": 86
+    },
+    {
+      "cohort": "GSE35958",
+      "n_control": 4,
+      "n_case": 5,
+      "shared_genes": 11458,
+      "allocations": 126,
+      "abs_rho": 0.0009384953906628435,
+      "abs_exact_one_sided_p": 0.5,
+      "signed_rho": 0.028218093795448877,
+      "signed_exact_two_sided_p": 0.5317460317460317,
+      "signature_difference": 0.03665861454722969,
+      "signature_exact_two_sided_p": 0.023809523809523808,
+      "signature_up": 91,
+      "signature_down": 89
+    },
+    {
+      "cohort": "GSE230665",
+      "n_control": 3,
+      "n_case": 12,
+      "shared_genes": 10968,
+      "allocations": 455,
+      "abs_rho": -0.010968211766925839,
+      "abs_exact_one_sided_p": 0.7032967032967034,
+      "signed_rho": 0.007150941178723747,
+      "signed_exact_two_sided_p": 0.8967032967032967,
+      "signature_difference": -0.009953205120996811,
+      "signature_exact_two_sided_p": 0.6307692307692307,
+      "signature_up": 86,
+      "signature_down": 89
+    }
+  ],
+  "combined": {
+    "abs": {
+      "equal_weight_mean_standardized_statistic": 0.38482500667910435,
+      "monte_carlo_p": 0.25886948226103546,
+      "draws": 500000,
+      "alternative": "greater",
+      "cohort_standardized_statistics": [
+        1.6955196677286475,
+        0.04225794026500294,
+        -0.5833025879563374
+      ]
+    },
+    "signed": {
+      "equal_weight_mean_standardized_statistic": 0.6679272677204698,
+      "monte_carlo_p": 0.2543054913890172,
+      "draws": 500000,
+      "alternative": "two-sided",
+      "cohort_standardized_statistics": [
+        0.9733879935874672,
+        0.6505255455456783,
+        0.37986826402826374
+      ]
+    },
+    "signature": {
+      "equal_weight_mean_standardized_statistic": 0.9633408976032293,
+      "monte_carlo_p": 0.09497181005637989,
+      "draws": 500000,
+      "alternative": "two-sided",
+      "cohort_standardized_statistics": [
+        1.2561904743139214,
+        2.3097608280271094,
+        -0.6759286095313425
+      ]
+    }
+  },
+  "leave_one_donor_out": {
+    "GSE156508": {
+      "all_positive": true,
+      "rho_min": 0.01542184355795127,
+      "rho_max": 0.03147432711913628
+    },
+    "GSE35958": {
+      "all_positive": false,
+      "rho_min": -0.0055693036316709675,
+      "rho_max": 0.008068424234264512
+    },
+    "GSE230665": {
+      "all_positive": false,
+      "rho_min": -0.016726625020041925,
+      "rho_max": 0.0002683081324817579
+    }
+  },
+  "guardrails": [
+    "GSE156508 comparator is severe osteoarthritis, not healthy bone.",
+    "GSE230665 has only three controls.",
+    "Cell source differs across cohorts.",
+    "Magnitude association is not directional transfer or diagnostic accuracy."
+  ]
+}

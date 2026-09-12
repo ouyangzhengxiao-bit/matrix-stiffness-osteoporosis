@@ -1,0 +1,12 @@
+{
+  "status": "post_hoc_overlap_removed_sensitivity",
+  "spatial_total_genes": 200,
+  "overlap_removed": 125,
+  "spatial_unique_source_genes": 75,
+  "spatial_unique_meta_genes": 64,
+  "observed_mean_abs_meta_z": 0.629360713944195,
+  "matched_null_mean": 0.5597097178442797,
+  "effect": 0.06965099609991532,
+  "standardized_effect": 1.263705827094771,
+  "one_sided_permutation_p": 0.10654467276636168
+}

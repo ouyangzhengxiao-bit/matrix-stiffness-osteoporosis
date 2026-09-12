@@ -1,0 +1,8 @@
+accession,reported_replication,independence_reporting,dependent_contrasts,overall_reporting_concern
+GSE193021,3/group,Unclear from processed record,Two time points share study context,Some concerns
+GSE181512,3/group,Reported groups; donor/animal source incompletely captured,Single primary contrast,Some concerns
+GSE226411,3/group,Exposure time not reported in available processed metadata,Single primary contrast,High concern: incomplete exposure metadata
+GSE288678,4/cell,Cell/donor independence requires source confirmation,Three ECM-specific contrasts,Some concerns
+GSE55867,3 paired donors,Paired donors explicit,Single paired primary contrast,Lower concern
+GSE255574,3/level,Replicate level reported,Two time points share study context,Some concerns
+GSE310514,2-3/group,Small group size,Three passages share study context,High concern: small n

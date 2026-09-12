@@ -1,0 +1,3 @@
+test,n_genes,mean_ZSTAT,matched_null_mean,matched_null_sd,standardized_effect,one_sided_permutation_p,strata_with_replacement,strata_expanded_to_neighbours,BH_q
+positive_stiffness_signature,94,3.263341765957446,3.1778137667410147,0.32453229979112935,0.2635423323702372,0.3835808209589521,0,2,0.7671616419179041
+negative_stiffness_signature,97,2.7743255567010316,3.0264086511603376,0.3076646767333528,-0.8193436345563377,0.7935603219839008,0,0,0.7935603219839008

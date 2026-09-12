@@ -1,0 +1,26 @@
+{
+  "primary_gene_set_test": {
+    "source": "GSE147390_Gong2021",
+    "source_program_genes": 2235,
+    "mapped_genes": 2074,
+    "observed_mean_abs_meta_z": 0.5774238423836893,
+    "null_mean": 0.560918913875945,
+    "raw_matched_effect": 0.01650492850774432,
+    "standardized_matched_effect": 1.7638796394831169,
+    "null_95_low": 0.5426969310094361,
+    "null_95_high": 0.5791915554467548,
+    "permutation_p": 0.039248037598120095
+  },
+  "study_unit": {
+    "n_studies": 7,
+    "positive_studies": 6,
+    "mean_raw_matched_effect": 0.051057331940548546,
+    "t_95_ci_low": -0.005197034941885559,
+    "t_95_ci_high": 0.10731169882298265,
+    "one_sided_exact_sign_p": 0.0625,
+    "one_sided_exact_signflip_p": 0.0390625,
+    "sensitivity_one_sided_t_p": 0.0340588630877752
+  },
+  "leave_one_study_out_all_means_positive": true,
+  "decision": "partial_or_not_support"
+}

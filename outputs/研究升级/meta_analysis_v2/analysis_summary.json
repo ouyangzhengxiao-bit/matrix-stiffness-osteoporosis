@@ -1,0 +1,12 @@
+{
+  "independent_studies": 7,
+  "genes_meta_analyzed": 12241,
+  "genes_fdr": 0,
+  "conserved_genes": 0,
+  "pathways_fdr": 109,
+  "pathways_fdr_by_collection": {
+    "c2": 97,
+    "h": 12
+  },
+  "bone_any_fdr": false
+}

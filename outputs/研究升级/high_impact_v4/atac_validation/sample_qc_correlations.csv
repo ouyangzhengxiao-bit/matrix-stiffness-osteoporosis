@@ -1,0 +1,7 @@
+sample_a,sample_b,spearman_rho,p
+senescent_1,senescent_2,0.9798856354837715,0.0
+senescent_1,force_plus_1,0.958575462973449,0.0
+senescent_1,force_plus_2,0.953984806738357,0.0
+senescent_2,force_plus_1,0.9627763286388777,0.0
+senescent_2,force_plus_2,0.9581089730413759,0.0
+force_plus_1,force_plus_2,0.9896898034488661,0.0

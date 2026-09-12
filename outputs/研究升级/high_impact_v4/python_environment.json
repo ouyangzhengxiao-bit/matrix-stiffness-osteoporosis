@@ -1,0 +1,14 @@
+{
+  "python": "3.14.0",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "statsmodels": "0.14.6",
+    "openpyxl": "3.1.5",
+    "docx": "1.2.0",
+    "pyBigWig": "0.3.25",
+    "matplotlib": "3.10.7"
+  }
+}

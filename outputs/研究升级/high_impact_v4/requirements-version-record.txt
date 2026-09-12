@@ -1,0 +1,8 @@
+numpy==2.3.4
+pandas==2.3.3
+scipy==1.17.1
+statsmodels==0.14.6
+openpyxl==3.1.5
+pyBigWig==0.3.25
+matplotlib==3.10.7
+python-docx==1.2.0

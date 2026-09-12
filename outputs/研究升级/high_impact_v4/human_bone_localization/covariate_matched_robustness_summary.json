@@ -1,0 +1,52 @@
+{
+  "meta_level": [
+    {
+      "program": "scRNA",
+      "n_genes": 1004,
+      "observed": 0.5992608641781701,
+      "null_mean": 0.5561431488667935,
+      "raw_matched_effect": 0.04311771531137665,
+      "standardized_effect": 3.1294953440588453,
+      "permutation_p": 0.0010499475026248687,
+      "bonferroni_p": 0.0020998950052497373
+    },
+    {
+      "program": "spatial",
+      "n_genes": 184,
+      "observed": 0.6519861810172926,
+      "null_mean": 0.5526519520490806,
+      "raw_matched_effect": 0.09933422896821198,
+      "standardized_effect": 3.1667914601068516,
+      "permutation_p": 0.0012499375031248437,
+      "bonferroni_p": 0.0024998750062496873
+    }
+  ],
+  "study_unit": [
+    {
+      "program": "scRNA",
+      "n_studies": 7,
+      "positive_studies": 5,
+      "mean_raw_effect": 0.11057397160929476,
+      "ci_low": -0.025199459054691495,
+      "ci_high": 0.246347402273281,
+      "exact_sign_p": 0.2265625,
+      "exact_signflip_p": 0.0546875,
+      "sensitivity_t_p": 0.04667870557802506
+    },
+    {
+      "program": "spatial",
+      "n_studies": 7,
+      "positive_studies": 6,
+      "mean_raw_effect": 0.234446192221395,
+      "ci_low": 0.06059510478028682,
+      "ci_high": 0.4082972796625032,
+      "exact_sign_p": 0.0625,
+      "exact_signflip_p": 0.015625,
+      "sensitivity_t_p": 0.008206257219416894
+    }
+  ],
+  "all_leave_one_out_means_positive": {
+    "scRNA": true,
+    "spatial": true
+  }
+}

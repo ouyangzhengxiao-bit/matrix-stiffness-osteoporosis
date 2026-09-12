@@ -1,0 +1,44 @@
+{
+  "source": "GSE156508",
+  "design": "six osteoporotic hip-fracture versus six severe-osteoarthritis primary femoral-head osteoblast donors",
+  "shared_genes": 11580,
+  "exact_balanced_allocations": 924,
+  "primary": {
+    "test": "Spearman absolute stiffness meta z versus absolute disease Welch t",
+    "rho": 0.025406691069961292,
+    "one_sided_exact_label_permutation_p": 0.030303030303030304
+  },
+  "secondary_signed": {
+    "rho": 0.05177886973190447,
+    "two_sided_exact_label_permutation_p": 0.36147186147186144
+  },
+  "fixed_signature": {
+    "positive_genes": 85,
+    "negative_genes": 86,
+    "fracture_minus_OA_score": 0.006528136850438515,
+    "two_sided_exact_label_permutation_p": 0.24675324675324675
+  },
+  "program_disease_magnitude": [
+    {
+      "program": "GSE147390_osteoblast_markers",
+      "mapped_genes": 1957,
+      "effect_vs_complement": 0.0061709478154571284,
+      "one_sided_exact_p": 0.40476190476190477,
+      "Holm_p": 0.40476190476190477
+    },
+    {
+      "program": "Chai_spatial_osteoblast_union",
+      "mapped_genes": 174,
+      "effect_vs_complement": 0.25041359333215907,
+      "one_sided_exact_p": 0.03896103896103896,
+      "Holm_p": 0.07792207792207792
+    }
+  ],
+  "interpretation_guardrail": "Osteoporotic fracture versus severe osteoarthritis; not healthy controls and not causal.",
+  "leave_one_donor_out": {
+    "all_rho_positive": true,
+    "rho_min": 0.01542184355795127,
+    "rho_max": 0.03147432711913628,
+    "significant_at_0.05": 5
+  }
+}

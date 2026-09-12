@@ -1,0 +1,110 @@
+{
+  "work/upgrade/data/GSE222752_metadata.txt": {
+    "bytes": 5966,
+    "sha256": "c3dd4cb74557d0fec7a62769d242d27b57cc8d8cce24fe7e709b0f6e5abc3bf0"
+  },
+  "work/upgrade/data/GSE255574_family.soft.gz": {
+    "bytes": 5534,
+    "sha256": "643025695e4f104289e0f569853110fdafffa8091d837d73bd09f8923725d8fa"
+  },
+  "work/upgrade/data/GSE276529_family.soft.gz": {
+    "bytes": 2717,
+    "sha256": "862bea6071717b94b0c09ebc4c3a7afc11fa1b8864e1cfa4300907ab606ae6f9"
+  },
+  "work/upgrade/data/GSE276529_rsem_count.tsv.gz": {
+    "bytes": 826801,
+    "sha256": "7ee02ffe2cacbb860cd3e176ec59a312c5f5d224fbe3a48505f6a32897b091c4"
+  },
+  "work/upgrade/data/GSE22011_series_matrix.txt.gz": {
+    "bytes": 2042324,
+    "sha256": "24fa64379c9e776d1d4b15842bfc4f4f1caf975ae0eddce6518a72329aa72267"
+  },
+  "work/upgrade/data/GSE249471_family.soft.gz": {
+    "bytes": 2489,
+    "sha256": "e1c4f176269214309417c65e0b9eb22f0ec6d3636e6ab765a60506f3416c92b3"
+  },
+  "work/upgrade/data/GSE181512_family.soft.gz": {
+    "bytes": 2225,
+    "sha256": "7ca4cf2cb2686506f2e69cbabbf00ede5dec23876b109750c1f64a1ac8241ef2"
+  },
+  "work/upgrade/data/GSE193021_series_matrix.txt.gz": {
+    "bytes": 3557043,
+    "sha256": "d2c0bc0f9d331a27c6d4ecd8b277648f1f86941235b98ff1b9043ffceedcf9a6"
+  },
+  "work/upgrade/data/GSE288678_family.soft.gz": {
+    "bytes": 3751,
+    "sha256": "192da6e82418f571d12616db9afdade21da0f470764b36803d8f8fec2d049166"
+  },
+  "work/upgrade/data/GSE255574_metadata.txt": {
+    "bytes": 18889,
+    "sha256": "1330cb1f6ce30c30d78faacb056f39feab25c5f0d31eafc1fc4a2f82a3728dd2"
+  },
+  "work/upgrade/data/GSE181512_gene_fpkm.txt.gz": {
+    "bytes": 2085630,
+    "sha256": "ae748be1273330045f8dcf1af46dedea807036b24388e0d89cdb93a7d838ad30"
+  },
+  "work/upgrade/data/GSE249471_metadata.txt": {
+    "bytes": 3446,
+    "sha256": "5b41e3fc8ea3f4b35bf8cf4d374077519fdcbfc7f68dc5b3de5d2a565ad99912"
+  },
+  "work/upgrade/data/GSE193021_family.soft.gz": {
+    "bytes": 21052717,
+    "sha256": "cdbdfe4d5565ae71df6c2f1b7db135c121196f1531590325b3b612190f34ba6a"
+  },
+  "work/upgrade/data/GSE55867_series_matrix.txt.gz": {
+    "bytes": 6463798,
+    "sha256": "354c4922f8328585a24778bc3813664cd07adf1d1e4de9c43708edf9452fec4a"
+  },
+  "work/upgrade/data/GSE226411_family.soft.gz": {
+    "bytes": 3109,
+    "sha256": "f7e7adeff5874382835b362b2befcc60366c2660c6e5abc3a09244edad57a534"
+  },
+  "work/upgrade/data/GSE226411_rpkm.txt.gz": {
+    "bytes": 661229,
+    "sha256": "61b1c5d368ad86a929b83d9de7858caf6e9f2ccfb2c509d1738025d4feaa8dee"
+  },
+  "work/upgrade/data/GSE22011_family.soft.gz": {
+    "bytes": 15437021,
+    "sha256": "2b1becfdf8ad7017bc5c20b615ab214e8eba0f66eb53a1d3fd0e8915e8b904ea"
+  },
+  "work/upgrade/data/GSE152708_family.soft.gz": {
+    "bytes": 12770,
+    "sha256": "23beaf6cb26747a94d6960249d7fdcc66500cf29ee999e3ecacc5dfe280068f7"
+  },
+  "work/upgrade/data/GSE222752_family.soft.gz": {
+    "bytes": 3889,
+    "sha256": "edd9ca7808664211bd0838c07433e208f74414277f0319dd39175b2893ce05f5"
+  },
+  "work/upgrade/data/GSE310514_RawCountMatrix.csv.gz": {
+    "bytes": 685006,
+    "sha256": "a0522262d02ad230592605c15718edb84dfa46c8bb38493579ab11cf91a07ccd"
+  },
+  "work/upgrade/data/GSE55867_family.soft.gz": {
+    "bytes": 990,
+    "sha256": "04b10f58e3f1340fc897c7057a0001c82ebd216d8ced1a96a2f05676b5d22494"
+  },
+  "work/upgrade/data/GSE276529_metadata.txt": {
+    "bytes": 3742,
+    "sha256": "1aca339b9fb598ec39aa6b31d7f132f43452523d576daefb8ce168700d60a266"
+  },
+  "work/upgrade/data/GSE152708_gene_counts.csv.gz": {
+    "bytes": 7758524,
+    "sha256": "bbf382bc41ac5285e85aee8db7fc5a7b09eb5457c98127c732389df1713ec3d6"
+  },
+  "work/upgrade/data/GSE310514_family.soft.gz": {
+    "bytes": 4763,
+    "sha256": "3e978b7830379370e7b6382ebd1d962da752717c60893cf3bc11587a3f31dbc2"
+  },
+  "work/upgrade/data/GSE288678_gene_fpkm.xlsx": {
+    "bytes": 15847961,
+    "sha256": "8c4315177a8d564be5ac1d1a177ff7dca463501422d90bef07b5e6e94a255582"
+  },
+  "work/upgrade/data/h.all.v2025.1.Hs.symbols.gmt": {
+    "bytes": 48689,
+    "sha256": "f22066af72e215ccb7b89d88e492c07e1eef17534c2ca7b0f9902cfecbbdd8e9"
+  },
+  "work/upgrade/data/c2.cp.reactome.v2025.1.Hs.symbols.gmt": {
+    "bytes": 861211,
+    "sha256": "53b9b506bf3be87700cbb3cbbbb7a6faa847fbe62e65421541b14a2b763bab6b"
+  }
+}

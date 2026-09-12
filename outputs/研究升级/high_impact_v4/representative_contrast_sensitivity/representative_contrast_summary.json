@@ -1,0 +1,19 @@
+{
+  "design": "one representative contrast per GEO series; first ordered time/coating/passage contrast for multi-contrast series",
+  "representative_choices": {
+    "GSE193021": "first deposited comparison (samples 1-3 vs 4-6)",
+    "GSE181512": "only eligible contrast",
+    "GSE226411": "only eligible contrast",
+    "GSE288678": "first ECM stratum",
+    "GSE55867": "only paired contrast",
+    "GSE255574": "24-hour 2000 Pa vs 150 Pa",
+    "GSE310514": "passage 1, 100 kPa vs 2 kPa"
+  },
+  "independent_studies": 7,
+  "genes_meta_analyzed": 12241,
+  "genes_fdr": 0,
+  "minimum_p": 0.01472459811323771,
+  "minimum_q": 0.9998522961638839,
+  "pooled_effect_spearman_vs_all_contrasts": 0.8136803973305933,
+  "pooled_effect_spearman_p": 0.0
+}

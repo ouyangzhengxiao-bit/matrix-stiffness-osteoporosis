@@ -1,0 +1,2 @@
+source,source_program_genes,mapped_genes,observed_mean_abs_meta_z,null_mean,raw_matched_effect,standardized_matched_effect,null_95_low,null_95_high,permutation_p
+GSE147390_Gong2021,2235,2074,0.5774238423836893,0.560918913875945,0.01650492850774432,1.7638796394831169,0.5426969310094361,0.5791915554467548,0.039248037598120095

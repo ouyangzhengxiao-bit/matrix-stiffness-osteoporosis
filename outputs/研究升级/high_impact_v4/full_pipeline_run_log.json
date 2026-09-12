@@ -1,0 +1,143 @@
+{
+  "completed": true,
+  "start_index": 0,
+  "total_seconds": 241.7,
+  "steps": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/upgrade/run_meta_analysis_v2.py"
+      ],
+      "exit_code": 0,
+      "seconds": 28.56
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/upgrade/run_pathway_robustness_v2.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.82
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_human_bone_localization.py"
+      ],
+      "exit_code": 0,
+      "seconds": 91.78
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_localization_study_unit_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.1
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_localization_overlap_sensitivity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.31
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_localization_covariate_robustness.py"
+      ],
+      "exit_code": 0,
+      "seconds": 6.5
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_independent_osteoblast_validation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.78
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_itga11_integration.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.21
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_atac_validation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 24.93
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_atac_bidirectional.py"
+      ],
+      "exit_code": 0,
+      "seconds": 10.43
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_atac_tpm_sensitivity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 10.89
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_genetics_validation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.45
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_representative_contrast_sensitivity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 19.42
+    },
+    {
+      "command": [
+        "Rscript",
+        "work/high_impact/preprocess_gse156508.R"
+      ],
+      "exit_code": 0,
+      "seconds": 4.31
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/run_osteoporosis_osteoblast_validation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 8.85
+    },
+    {
+      "command": [
+        "Rscript",
+        "work/high_impact/make_v4_figures.R"
+      ],
+      "exit_code": 0,
+      "seconds": 2.38
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "work/high_impact/make_figure4.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.97
+    }
+  ]
+}

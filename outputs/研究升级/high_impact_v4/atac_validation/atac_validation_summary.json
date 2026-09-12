@@ -1,0 +1,77 @@
+{
+  "annotation": "GENCODE v49 comprehensive gene annotation, GRCh38, Ensembl 115",
+  "n_protein_coding_genes_with_meta": 11986,
+  "primary": {
+    "n_positive": 92,
+    "n_negative": 95,
+    "positive_mean_delta": 0.001227809011952506,
+    "negative_mean_delta": 0.003380528366985209,
+    "directional_score": -0.002152719355032703,
+    "matched_null_mean": 0.004767871168886012,
+    "matched_null_sd": 0.008512600559478794,
+    "one_sided_permutation_p": 0.7917604119794011,
+    "positive_strata_with_replacement": 0,
+    "negative_strata_with_replacement": 0
+  },
+  "sensitivity_total_signal_scaled_directional_score": -0.025536967418356205,
+  "genomewide_spearman": {
+    "rho": 0.018191986583884958,
+    "p": 0.04641204923695355
+  },
+  "within_group_qc": {
+    "senescent_rho": 0.9798856354837715,
+    "force_plus_rho": 0.9896898034488661
+  },
+  "nonzero_fraction": {
+    "senescent_1": 0.9992491239779743,
+    "senescent_2": 0.9994994159853162,
+    "force_plus_1": 0.9993325546470883,
+    "force_plus_2": 0.9990822626397464
+  },
+  "FOXO1_descriptive": [
+    {
+      "gene": "FOXO1",
+      "atac_delta": -0.01843709403417615,
+      "atac_delta_scaled": 0.29773426204901865
+    }
+  ],
+  "bigwig_headers": {
+    "senescent_1": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 192,
+      "sumData": 161268300,
+      "sumSquared": 348219286
+    },
+    "senescent_2": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 193,
+      "sumData": 158513536,
+      "sumSquared": 348830886
+    },
+    "force_plus_1": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 131,
+      "sumData": 141031203,
+      "sumSquared": 274195098
+    },
+    "force_plus_2": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 81,
+      "sumData": 138510077,
+      "sumSquared": 257623220
+    }
+  },
+  "decision": "not_support"
+}

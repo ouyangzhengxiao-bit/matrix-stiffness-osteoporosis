@@ -1,0 +1,106 @@
+{
+  "source": "Nature Genetics 2026 Supplementary Table 7e; UK Biobank eBMD MAGMA gene tests, N=448010",
+  "n_merged_genes": 11615,
+  "primary": {
+    "test": "200_gene_stiffness_signature",
+    "n_genes": 191,
+    "mean_ZSTAT": 3.014993219895288,
+    "matched_null_mean": 3.0997699718234486,
+    "matched_null_sd": 0.2234191466740459,
+    "standardized_effect": -0.37945159665229866,
+    "one_sided_permutation_p": 0.6427178641067947,
+    "strata_with_replacement": 0,
+    "strata_expanded_to_neighbours": 2
+  },
+  "adjusted_regression_sensitivity": {
+    "signature_beta": -0.14066954002517218,
+    "HC3_SE": 0.24671889628879173,
+    "z": -0.570161192114423,
+    "one_sided_p": 0.7157158126073555,
+    "n_genes": 11615
+  },
+  "secondary_signature_tests": [
+    {
+      "test": "positive_stiffness_signature",
+      "n_genes": 94,
+      "mean_ZSTAT": 3.263341765957446,
+      "matched_null_mean": 3.1778137667410147,
+      "matched_null_sd": 0.32453229979112935,
+      "standardized_effect": 0.2635423323702372,
+      "one_sided_permutation_p": 0.3835808209589521,
+      "strata_with_replacement": 0,
+      "strata_expanded_to_neighbours": 2,
+      "BH_q": 0.7671616419179041
+    },
+    {
+      "test": "negative_stiffness_signature",
+      "n_genes": 97,
+      "mean_ZSTAT": 2.7743255567010316,
+      "matched_null_mean": 3.0264086511603376,
+      "matched_null_sd": 0.3076646767333528,
+      "standardized_effect": -0.8193436345563377,
+      "one_sided_permutation_p": 0.7935603219839008,
+      "strata_with_replacement": 0,
+      "strata_expanded_to_neighbours": 0,
+      "BH_q": 0.7935603219839008
+    }
+  ],
+  "continuous_abs_meta_effect_vs_ZSTAT": {
+    "rho": -0.01744998048167373,
+    "p": 0.060029627750214906
+  },
+  "significant_eBMD_overlap": {
+    "universe": 11615,
+    "eBMD_significant": 1851,
+    "signature": 191,
+    "overlap": 34,
+    "genes": [
+      "AQP1",
+      "ARHGAP31",
+      "ARL6IP4",
+      "CENPX",
+      "CORO7",
+      "DAAM2",
+      "EP300",
+      "FDFT1",
+      "FLNB",
+      "FOXC1",
+      "FZD8",
+      "HHIP",
+      "HLX",
+      "IBSP",
+      "MASP2",
+      "MEIS1",
+      "METTL7A",
+      "NFIX",
+      "OLFML3",
+      "PARPBP",
+      "PKNOX2",
+      "PLPP3",
+      "PLXDC2",
+      "RND2",
+      "RSPO3",
+      "SASH1",
+      "SMIM4",
+      "SMOC1",
+      "SOX5",
+      "TGFA",
+      "TGFBI",
+      "TNFRSF11B",
+      "TRAIP",
+      "ZFP91"
+    ],
+    "hypergeometric_p": 0.26633419835307426
+  },
+  "ATAC_absolute_delta_vs_ZSTAT_exploratory": {
+    "force_plus": {
+      "rho": 0.004548878768095398,
+      "p": 0.6247431398845392
+    },
+    "soft": {
+      "rho": 0.014770688423881852,
+      "p": 0.11220383396416374
+    }
+  },
+  "decision": "not_support"
+}

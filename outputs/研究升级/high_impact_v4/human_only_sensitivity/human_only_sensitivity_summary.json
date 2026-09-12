@@ -1,0 +1,89 @@
+{
+  "human_studies": [
+    "GSE193021",
+    "GSE226411",
+    "GSE288678",
+    "GSE55867",
+    "GSE255574"
+  ],
+  "genes_k_ge_3": 12757,
+  "genes_fdr": 0,
+  "full_vs_human_effect_spearman": 0.8104702292270727,
+  "full_vs_human_p_descriptive": 0.0,
+  "cohorts": [
+    {
+      "cohort": "GSE156508",
+      "shared_genes": 11877,
+      "allocations": 924,
+      "abs_rho": 0.02251092618061813,
+      "abs_exact_one_sided_p": 0.1038961038961039,
+      "signed_rho": 0.06128866822115598,
+      "signed_exact_two_sided_p": 0.5281385281385281,
+      "signature_difference": 0.016290610291434915,
+      "signature_exact_two_sided_p": 0.2012987012987013,
+      "signature_up": 85,
+      "signature_down": 80
+    },
+    {
+      "cohort": "GSE35958",
+      "shared_genes": 11783,
+      "allocations": 126,
+      "abs_rho": 0.020560219785762137,
+      "abs_exact_one_sided_p": 0.0873015873015873,
+      "signed_rho": 0.09818847666408902,
+      "signed_exact_two_sided_p": 0.16666666666666666,
+      "signature_difference": 0.060319884544617036,
+      "signature_exact_two_sided_p": 0.007936507936507936,
+      "signature_up": 93,
+      "signature_down": 89
+    },
+    {
+      "cohort": "GSE230665",
+      "shared_genes": 11193,
+      "allocations": 455,
+      "abs_rho": -0.020065372485038282,
+      "abs_exact_one_sided_p": 0.9208791208791208,
+      "signed_rho": 0.01941309668968868,
+      "signed_exact_two_sided_p": 0.8791208791208791,
+      "signature_difference": -0.012478635933027032,
+      "signature_exact_two_sided_p": 0.4901098901098901,
+      "signature_up": 91,
+      "signature_down": 90
+    }
+  ],
+  "combined": {
+    "abs": {
+      "statistic": 0.4903951303845255,
+      "p": 0.19891560216879567,
+      "draws": 500000,
+      "alternative": "greater",
+      "cohort_z": [
+        1.3272571786523615,
+        1.6042939398448555,
+        -1.4603657273436408
+      ]
+    },
+    "signed": {
+      "statistic": 0.8624025792278228,
+      "p": 0.13751772496455006,
+      "draws": 500000,
+      "alternative": "two-sided",
+      "cohort_z": [
+        0.7059952892101162,
+        1.3506708345876015,
+        0.5305416138857508
+      ]
+    },
+    "signature": {
+      "statistic": 0.9971182050530792,
+      "p": 0.08352183295633409,
+      "draws": 500000,
+      "alternative": "two-sided",
+      "cohort_z": [
+        1.287581478146432,
+        2.457636257602919,
+        -0.7538631205901135
+      ]
+    }
+  }
+}

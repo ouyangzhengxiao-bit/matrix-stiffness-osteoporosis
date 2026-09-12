@@ -1,0 +1,29 @@
+{
+  "scRNA": {
+    "n_studies": 7,
+    "mean_raw_matched_effect": 0.1319391947089969,
+    "raw_effect_ci_low": -0.022527746878045873,
+    "raw_effect_ci_high": 0.28640613629603967,
+    "mean_standardized_effect": 4.750720366064393,
+    "positive_studies": 5,
+    "one_sided_exact_sign_p": 0.2265625,
+    "one_sided_exact_signflip_p": 0.046875,
+    "sensitivity_one_sided_t_p": 0.04079633654766047
+  },
+  "spatial": {
+    "n_studies": 7,
+    "mean_raw_matched_effect": 0.2551685239023566,
+    "raw_effect_ci_low": 0.06529243159903833,
+    "raw_effect_ci_high": 0.4450446162056749,
+    "mean_standardized_effect": 3.4509727216143546,
+    "positive_studies": 7,
+    "one_sided_exact_sign_p": 0.0078125,
+    "one_sided_exact_signflip_p": 0.0078125,
+    "sensitivity_one_sided_t_p": 0.008324257411040674
+  },
+  "all_leave_one_out_means_positive": {
+    "scRNA": true,
+    "spatial": true
+  },
+  "post_review_inference": "exact sign-flip test of raw matched study effects; exact sign count and t test retained as robustness summaries"
+}

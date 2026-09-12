@@ -1,0 +1,64 @@
+{
+  "comparison": "young cells on soft 1.5 kPa substrate (Force-) versus young control",
+  "n_genes": 11986,
+  "primary_like_directional_score": -0.008707386401602776,
+  "expected_direction": "negative",
+  "one_sided_matched_permutation_p": 0.23508824558772062,
+  "n_positive": 92,
+  "n_negative": 95,
+  "matched_null_mean": 0.00015675737970042154,
+  "matched_null_sd": 0.012137684789093411,
+  "total_signal_scaled_directional_score": 0.0012433026870401487,
+  "within_group_qc": {
+    "young_1__young_2": 0.9847864112766388,
+    "force_minus_1__force_minus_2": 0.9813232006661703
+  },
+  "soft_vs_force_plus_genomewide_spearman": {
+    "rho": 0.03062979366797835,
+    "p": 0.0007970849990142555
+  },
+  "soft_delta_vs_meta_effect_spearman": {
+    "rho": -0.0465257152069226,
+    "p": 3.4710469760980006e-07
+  },
+  "bidirectional_direction_check": true,
+  "bidirectional_statistical_support": false,
+  "bigwig_headers": {
+    "young_1": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 51,
+      "sumData": 148687200,
+      "sumSquared": 171076139
+    },
+    "young_2": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 52,
+      "sumData": 149217980,
+      "sumSquared": 174465773
+    },
+    "force_minus_1": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 177,
+      "sumData": 134575827,
+      "sumSquared": 295234922
+    },
+    "force_minus_2": {
+      "version": 4,
+      "nLevels": 7,
+      "nBasesCovered": 3088286401,
+      "minVal": 0,
+      "maxVal": 165,
+      "sumData": 136152804,
+      "sumSquared": 267120296
+    }
+  }
+}

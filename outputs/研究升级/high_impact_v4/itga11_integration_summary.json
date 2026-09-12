@@ -1,0 +1,79 @@
+{
+  "background_genes": 11340,
+  "primary_hypothesis": "Higher-stiffness transcriptional effects are concentrated in the ITGA11-high osteogenic cluster 0 state.",
+  "cluster0_tests": [
+    {
+      "cluster": "Cl_0",
+      "endpoint": "signed_stiffness_z",
+      "n_markers": 52,
+      "median_marker": 0.2840771647242151,
+      "median_background": 0.057132883537025954,
+      "rank_biserial": 0.15459235130567528,
+      "p": 0.054064480967769925,
+      "BH_q_within_endpoint": 0.09010746827961653
+    },
+    {
+      "cluster": "Cl_0",
+      "endpoint": "absolute_stiffness_z",
+      "n_markers": 52,
+      "median_marker": 0.44293060476330354,
+      "median_background": 0.47195497296443023,
+      "rank_biserial": -0.04355203619909498,
+      "p": 0.5873563564987712,
+      "BH_q_within_endpoint": 0.6171478095096163
+    }
+  ],
+  "bulk_signature_tests": [
+    {
+      "comparison": "logFC_high_low",
+      "n_positive": 93,
+      "n_negative": 86,
+      "directional_score": -0.09340779051660648,
+      "null_sd": 0.059725438556675725,
+      "permutation_p": 0.11689415529223539,
+      "BH_q": 0.35068246587670615
+    },
+    {
+      "comparison": "logFC_Proli_high_low",
+      "n_positive": 93,
+      "n_negative": 86,
+      "directional_score": -0.07135206224683029,
+      "null_sd": 0.06673638012679828,
+      "permutation_p": 0.28128593570321486,
+      "BH_q": 0.42192890355482227
+    },
+    {
+      "comparison": "logFC_siITGA11_siCTR",
+      "n_positive": 93,
+      "n_negative": 86,
+      "directional_score": 0.013395807794140277,
+      "null_sd": 0.06480692614307028,
+      "permutation_p": 0.8368081595920204,
+      "BH_q": 0.8368081595920204
+    }
+  ],
+  "genomewide_correlations": [
+    {
+      "comparison": "logFC_high_low",
+      "n_genes": 11761,
+      "spearman_rho": -0.015777139280917105,
+      "p": 0.08709475657813923,
+      "BH_q": 0.26128426973441765
+    },
+    {
+      "comparison": "logFC_Proli_high_low",
+      "n_genes": 11761,
+      "spearman_rho": -0.011528098845551919,
+      "p": 0.21125952045661223,
+      "BH_q": 0.31688928068491834
+    },
+    {
+      "comparison": "logFC_siITGA11_siCTR",
+      "n_genes": 11761,
+      "spearman_rho": -0.008691519580668012,
+      "p": 0.345938356745418,
+      "BH_q": 0.345938356745418
+    }
+  ],
+  "interpretation_guardrail": "All analyses use public data. Cells are not independent biological replicates; donor or study is the analysis unit where applicable."
+}

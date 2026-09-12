@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or derived dataset, please cite the archived release."
+title: "Matrix stiffness transcriptomic responses and osteoporosis: reproducible meta-analysis"
+type: software
+version: 1.0.0
+date-released: 2026-09-12
+authors:
+  - family-names: "REPLACE_WITH_FAMILY_NAME"
+    given-names: "REPLACE_WITH_GIVEN_NAME"
+    orcid: "https://orcid.org/REPLACE_IF_AVAILABLE"
+repository-code: "https://github.com/ouyangzhengxiao-bit/matrix-stiffness-osteoporosis"
+license: MIT
+keywords:
+  - matrix stiffness
+  - mechanotransduction
+  - osteoporosis
+  - transcriptomic meta-analysis
+  - reproducibility

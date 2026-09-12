@@ -1,0 +1,26 @@
+{
+  "primary_scRNA_osteoblast_lineage": {
+    "cluster": "scRNA_osteoblast_lineage_union",
+    "endpoint": "abs_meta_z",
+    "n_genes": 1007,
+    "observed": 0.6007683030788253,
+    "null_mean": 0.5586160733079281,
+    "effect": 0.042152229770897276,
+    "standardized_effect": 3.280077037467452,
+    "permutation_p": 0.00039998000099995,
+    "expanded_strata": 0
+  },
+  "prespecified_spatial_replication": {
+    "cluster": "spatial_osteoblast_lineage_union",
+    "endpoint": "abs_meta_z",
+    "n_genes": 184,
+    "observed": 0.6519861810172926,
+    "null_mean": 0.5595086501642,
+    "effect": 0.09247753085309252,
+    "standardized_effect": 2.9125189039472454,
+    "permutation_p": 0.002599870006499675,
+    "expanded_strata": 0
+  },
+  "scRNA_source_cells": 125063,
+  "decision": "support"
+}
