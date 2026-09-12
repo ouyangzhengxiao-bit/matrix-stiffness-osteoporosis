@@ -42,3 +42,12 @@ This repository contains original analysis code and derived numerical results. I
 ## Citation
 
 Citation metadata will be finalized before the first public release and Zenodo archive. After release, cite the version DOI shown in `CITATION.cff`.
+
+## License
+
+Original analysis code is released under the MIT License (`LICENSE`). Original derived tables, documentation and figures are released under the Creative Commons Attribution 4.0 International License (`LICENSE-DATA`). Source datasets retain the terms imposed by their originating repositories and data generators.
+
+## Author
+
+Zhengxiao Ouyang — ORCID: https://orcid.org/0000-0002-8997-0446  
+Department of Orthopedics, The Second Xiangya Hospital, Central South University.
