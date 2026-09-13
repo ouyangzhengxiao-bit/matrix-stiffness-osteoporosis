@@ -108,7 +108,7 @@ def manuscript():
     ])
     replace_start(d,'Analyses used Python','Analyses used Python 3.14.2 with pandas, NumPy, SciPy, statsmodels, openpyxl and pyBigWig, and R 4.5.2 with ggplot2, patchwork, scales and jsonlite. Random-set procedures used dated fixed seeds recorded in each script. The principal pipeline was rerun after dependency repair; protocols, amendments, search exports, screening decisions, environment records, derived results and executable scripts accompany the submission. Public source files are referenced by accession rather than redistributed.')
     replace_start(d,'Primary transcriptomic data are available','Primary transcriptomic data are available from NCBI GEO under GSE193021, GSE181512, GSE226411, GSE288678, GSE55867, GSE255574 and GSE310514. Independent osteoblast validation used GSE147390. External datasets are GSE166824, GSE22011, GSE152708, GSE35958, GSE230665, GSE276529, GSE317531 and GSE287556. Human femoral single-cell data are GSE317069, spatial bone data GSE299207 and the eBMD GWAS GWAS Catalog GCST90726625 [9]. Search exports, screening log, derived data and figure source tables accompany this submission.')
-    replace_start(d,'All custom scripts required','All custom scripts needed to regenerate the reported analyses and figures from the documented public inputs are included in the versioned code and derived-data archive accompanying submission. A permanent repository URL and release DOI should be added before submission: [AUTHOR TO PROVIDE REPOSITORY URL AND DOI].')
+    replace_start(d,'All custom scripts required','All custom scripts needed to regenerate the reported analyses and figures, dated protocols, derived numerical results and environment records are archived in Zenodo release v1.0.0 at https://doi.org/10.5281/zenodo.22726636 and maintained at https://github.com/ouyangzhengxiao-bit/matrix-stiffness-osteoporosis. The version DOI identifies the exact code and data snapshot used for this manuscript; the concept DOI https://doi.org/10.5281/zenodo.22726635 resolves to the latest archived release.')
     insert_before(d,'Acknowledgements',[
       ('Normal','17. Gong, Y. et al. Aging of human bone marrow stromal cells during osteoblast differentiation induces an osteoporotic phenotype. Aging 13, 17646-17666 (2021).'),
       ('Normal','18. Page, M. J. et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 372, n71 (2021).'),
@@ -198,7 +198,7 @@ def prisma():
     (24,'Registration and protocol','Provide registration/protocol information.','Methods; protocol archive','Not registered; revision-stage search stated; dated analysis protocols supplied.'),
     (25,'Support','Describe financial/nonfinancial support.','Acknowledgements','Author completion required.'),
     (26,'Competing interests','Declare competing interests.','Competing interests','Author completion required.'),
-    (27,'Availability','Report public availability of materials.','Data and Code availability; accompanying archive','Accessions and versioned archive supplied; repository DOI placeholder remains.')
+    (27,'Availability','Report public availability of materials.','Data and Code availability; accompanying archive','Accessions and archived release supplied; version DOI 10.5281/zenodo.22726636.')
     ]
     add_table(d,['item','topic','PRISMA requirement','location','status/comment'],items,6.1)
     d.add_paragraph('Items marked for author completion are visible in red placeholders in the manuscript or cover letter and must be resolved before submission.')

@@ -4,6 +4,7 @@ title: "Matrix stiffness transcriptomic responses and osteoporosis: reproducible
 type: software
 version: 1.0.0
 date-released: 2026-09-12
+doi: "10.5281/zenodo.22726636"
 authors:
   - family-names: "Ouyang"
     given-names: "Zhengxiao"

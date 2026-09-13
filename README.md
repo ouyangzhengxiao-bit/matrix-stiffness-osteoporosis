@@ -1,5 +1,7 @@
 # Matrix stiffness transcriptomic responses and osteoporosis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22726635.svg)](https://doi.org/10.5281/zenodo.22726635)
+
 Reproducible code, dated protocols, systematic-search records, derived results and source figures for a study-clustered meta-analysis of matrix-stiffness transcriptomic responses and their relationship to human osteoblast-lineage programs and osteoporosis cohorts.
 
 ## Main findings
@@ -41,7 +43,7 @@ This repository contains original analysis code and derived numerical results. I
 
 ## Citation
 
-Citation metadata will be finalized before the first public release and Zenodo archive. After release, cite the version DOI shown in `CITATION.cff`.
+For exact reproduction of the manuscript analyses, cite release v1.0.0 using the version DOI [10.5281/zenodo.22726636](https://doi.org/10.5281/zenodo.22726636). The concept DOI [10.5281/zenodo.22726635](https://doi.org/10.5281/zenodo.22726635) resolves to the latest archived release. Citation metadata are also provided in `CITATION.cff`.
 
 ## License
 

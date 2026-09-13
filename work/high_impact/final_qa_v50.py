@@ -13,6 +13,8 @@ for h in ['Results','Discussion','Methods','Data availability','Code availabilit
 # placeholders are intentionally limited to author-supplied information
 text='\n'.join(ps);found=re.findall(r'\[[^\]]*(?:AUTHOR|VERIFY)[^\]]*\]',text)
 ck(len(found)<=7,f'unexpected placeholder count {len(found)}')
+ck('10.5281/zenodo.22726636' in text,'archived release DOI missing')
+ck('[AUTHOR TO PROVIDE REPOSITORY URL AND DOI]' not in text,'repository DOI placeholder remains')
 mc=json.loads((R/'outputs/研究升级/high_impact_v4/multicohort_osteoporosis_validation/multicohort_osteoporosis_validation_summary.json').read_text())
 hu=json.loads((R/'outputs/研究升级/high_impact_v4/human_only_sensitivity/human_only_sensitivity_summary.json').read_text())
 ck(abs(mc['combined']['abs']['monte_carlo_p']-.25886948226103546)<1e-12,'MC mismatch');ck(hu['genes_fdr']==0 and hu['genes_k_ge_3']==12757,'human summary mismatch')
