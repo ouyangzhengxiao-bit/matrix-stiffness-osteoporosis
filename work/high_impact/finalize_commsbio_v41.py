@@ -117,7 +117,7 @@ def manuscript():
     # Put disclosure in Methods as required by target journal and retain author verification.
     insert_before(d,'Data availability',[
       ('Heading 2','Use of generative AI'),
-      ('Normal','[VERIFY AND EDIT: A large language model assisted with code drafting and language editing. All analyses, numerical results, citations and manuscript content were reviewed and remain the responsibility of the authors.]')
+      ('Normal','OpenAI Codex assisted with code review, language editing, reproducibility auditing and document preparation. The authors reviewed and verified all analyses, numerical results, citations, figures and manuscript content and take full responsibility for the work. No generative AI imagery is included.')
     ])
     # Remove duplicate terminal disclosure section.
     pars=d.paragraphs
@@ -196,12 +196,12 @@ def prisma():
     (22,'Certainty of evidence','Present certainty.','Discussion','Claims calibrated as supported, partial, borderline or unsupported.'),
     (23,'Discussion','Interpret results, limitations and implications.','Discussion','Reported.'),
     (24,'Registration and protocol','Provide registration/protocol information.','Methods; protocol archive','Not registered; revision-stage search stated; dated analysis protocols supplied.'),
-    (25,'Support','Describe financial/nonfinancial support.','Acknowledgements','Author completion required.'),
-    (26,'Competing interests','Declare competing interests.','Competing interests','Author completion required.'),
+    (25,'Support','Describe financial/nonfinancial support.','Funding','Funding sources and grant numbers supplied.'),
+    (26,'Competing interests','Declare competing interests.','Competing interests','No competing interests declared.'),
     (27,'Availability','Report public availability of materials.','Data and Code availability; accompanying archive','Accessions and archived release supplied; version DOI 10.5281/zenodo.22726636.')
     ]
     add_table(d,['item','topic','PRISMA requirement','location','status/comment'],items,6.1)
-    d.add_paragraph('Items marked for author completion are visible in red placeholders in the manuscript or cover letter and must be resolved before submission.')
+    d.add_paragraph('Author names, affiliations, contributions, funding and competing-interest information are supplied in the manuscript and cover letter.')
     d.save(OUT/'PRISMA_2020_Checklist.docx')
 
 if __name__=='__main__':

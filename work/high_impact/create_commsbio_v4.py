@@ -67,13 +67,23 @@ def table(d,headers,rows,font=6.8,widths=None):
 
 
 TITLE='Matrix stiffness responses localize to human osteoblast lineage programs without a universal gene signature'
+AUTHORS=('Tingting Tan, MD¹,²,†; Xia Chen, MD, PhD¹,†; Zhengxiao Ouyang, MD, PhD¹,³,*\n'
+'¹ Department of Orthopedics, The Second Xiangya Hospital, Central South University, Changsha, Hunan 410011, P.R. China\n'
+'² Department of Immunology, School of Basic Medical Science, Central South University, Changsha, Hunan 410013, P.R. China\n'
+'³ Osteopathy Laboratory of Surgical Department, The Second Xiangya Hospital, Central South University, Changsha, Hunan 410011, P.R. China\n'
+'† These authors contributed equally.\n'
+'Author email addresses: Tingting Tan: tinatan@126.com; Xia Chen (Associate Chief Physician): chenxiacxv99@csu.edu.cn; Zhengxiao Ouyang: ouyangzhengxiao@csu.edu.cn.')
+CORRESPONDING='*Correspondence: Zhengxiao Ouyang, MD, PhD, Department of Orthopedics, The Second Xiangya Hospital, Central South University, 139 Renmin Middle Road, Changsha, Hunan 410011, P.R. China; Email: ouyangzhengxiao@csu.edu.cn; Telephone: +86-13548560675; ORCID: https://orcid.org/0000-0002-8997-0446'
+FUNDING='This work was supported by the National Natural Science Foundation of China (grant nos. 82371600 and 82571826) and the Hunan Provincial Natural Science Foundation of China (grant nos. 2026JJ20072 and 2025JJ50614). The funders had no role in the design, conduct, analysis, interpretation, or reporting of this study.'
+CONTRIBUTIONS='Tingting Tan: Conceptualization, Methodology, Software, Formal analysis, Investigation, Data curation, Visualization, Writing – original draft. Xia Chen: Conceptualization, Methodology, Validation, Investigation, Resources, Writing – original draft, Writing – review and editing. Zhengxiao Ouyang: Conceptualization, Methodology, Supervision, Project administration, Funding acquisition, Writing – review and editing. Tingting Tan and Xia Chen contributed equally to this work. All authors reviewed and approved the final manuscript.'
+AI_DISCLOSURE='OpenAI Codex assisted with code review, language editing, reproducibility auditing and document preparation. The authors reviewed and verified all analyses, numerical results, citations, figures and manuscript content and take full responsibility for the work. No generative AI imagery is included.'
 
 
 def manuscript():
     d=Document();setup(d)
     p=d.add_paragraph(style='Title');p.alignment=WD_ALIGN_PARAGRAPH.CENTER;p.add_run(TITLE)
-    placeholder(d,'[AUTHOR NAMES AND AFFILIATIONS]')
-    placeholder(d,'[CORRESPONDING AUTHOR NAME EMAIL AND ORCID]')
+    addp(d,AUTHORS)
+    addp(d,CORRESPONDING)
     d.add_heading('Abstract',1)
     abstract=('Matrix stiffness regulates mesenchymal stromal cell behavior, yet the degree to which its transcriptomic effects generalize across experimental contexts and connect to osteoporosis is unclear. We reanalyzed seven independent public stiffness studies comprising 13 contrasts and 12,241 genes, while preserving each GEO series as the unit of inference. No gene passed false discovery rate correction, study-level gene-effect correlations ranged from -0.253 to 0.136, and 109 pooled-gene pathway signals fell to zero when inference was repeated across independent studies. Despite this directional heterogeneity, stiffness-response magnitude was enriched in osteoblast-lineage programs from 125,063 human femoral cells (matched permutation P=0.00040) and in an independent human bone spatial program (P=0.00260). The spatial osteoblast program showed positive enrichment in all seven stiffness studies (study-unit t-test P=0.0083; sign-test P=0.0078). A fixed 200-gene signature did not enrich estimated bone mineral density associations in 448,010 participants, identify an ITGA11-high osteogenic state, or show specific promoter-accessibility reversal after mechanical stretch or soft-matrix exposure. Public data therefore support distributed, lineage-localized mechanosensitivity rather than a universal stiffness gene program or osteoporosis biomarker.')
     addp(d,abstract)
@@ -148,11 +158,12 @@ def manuscript():
     for i,r in enumerate(refs,1):
         p=d.add_paragraph(f'{i}. {r}');p.paragraph_format.left_indent=Inches(.2);p.paragraph_format.first_line_indent=Inches(-.2);p.paragraph_format.space_after=Pt(2)
         for x in p.runs:x.font.size=Pt(8.2)
-    d.add_heading('Acknowledgements',1);placeholder(d,'[ACKNOWLEDGEMENTS OR NONE]')
-    d.add_heading('Author contributions',1);placeholder(d,'[COMPLETE WITH AUTHOR INITIALS AND CRediT ROLES]')
-    d.add_heading('Competing interests',1);placeholder(d,'[THE AUTHORS DECLARE NO COMPETING INTERESTS OR PROVIDE DETAILS]')
+    d.add_heading('Acknowledgements',1);addp(d,'We thank the investigators and participants of the public datasets analyzed in this study for making these resources available.')
+    d.add_heading('Funding',1);addp(d,FUNDING)
+    d.add_heading('Author contributions',1);addp(d,CONTRIBUTIONS)
+    d.add_heading('Competing interests',1);addp(d,'The authors declare no competing interests.')
     d.add_heading('Ethics statement',1);addp(d,'This study reanalyzed de-identified data from public repositories and performed no new human or animal experiments. Ethical approvals for source studies are reported in the original publications.')
-    d.add_heading('Generative AI disclosure',1);placeholder(d,'[VERIFY AND EDIT: A large language model assisted with code drafting and language editing. All analyses, numerical results, citations and manuscript content were reviewed and remain the responsibility of the authors.]')
+    d.add_heading('Generative AI disclosure',1);addp(d,AI_DISCLOSURE)
     d.save(OUT/'Manuscript_Communications_Biology.docx')
     print('abstract_words',len(re.findall(r"\b[\w-]+\b",abstract)))
 
@@ -160,7 +171,7 @@ def manuscript():
 def supplement():
     d=Document();setup(d)
     p=d.add_paragraph(style='Title');p.alignment=WD_ALIGN_PARAGRAPH.CENTER;p.add_run('Supplementary Information')
-    addp(d,TITLE);placeholder(d,'[AUTHOR NAMES]')
+    addp(d,TITLE);addp(d,'Tingting Tan†, Xia Chen† and Zhengxiao Ouyang*\n†These authors contributed equally. *Correspondence: ouyangzhengxiao@csu.edu.cn')
     addp(d,'This document contains the design audit and principal numerical results. Complete machine-readable tables, dated protocols and executable code are provided in the accompanying archive.')
     c=pd.read_csv(META/'cohort_characteristics_v3.csv')
     caption(d,'Supplementary Table 1  Primary and external dataset roles')
@@ -220,14 +231,15 @@ def supplement():
 
 def cover():
     d=Document();setup(d);p=d.add_paragraph(style='Title');p.add_run('Cover letter for Communications Biology')
-    placeholder(d,'[DATE]');addp(d,'Editors\nCommunications Biology');addp(d,'Dear Editors,')
+    addp(d,'15 September 2026');addp(d,'Editors\nCommunications Biology');addp(d,'Dear Editors,')
     addp(d,f'Please consider our Article, “{TITLE},” for publication in Communications Biology.')
     addp(d,'Matrix stiffness is widely treated as a source of transferable mesenchymal stromal-cell programs. We find a more specific biological organization. Across seven public studies, no gene or pathway survived independent-study inference, yet the magnitude of stiffness responses was concentrated in early osteoblast-lineage programs from 125,063 human femoral cells and reproduced in human bone spatial programs. Crucially, the spatial program was enriched in all seven independent stiffness studies. The result identifies lineage-localized, distributed mechanosensitivity while explaining why small universal gene panels fail across experimental contexts.')
     addp(d,'We challenged that interpretation rather than relying on one positive enrichment. A frozen 200-gene signature failed in donor-resolved ITGA11 osteogenic cultures, bidirectional mechanical-intervention ATAC-seq and eBMD gene statistics from 448,010 participants. The ATAC data reproduced global force-dependent accessibility changes but not signature-specific reversal. These orthogonal negative results delimit the claim and distinguish cell-state localization from an osteoporosis biomarker.')
     addp(d,'The manuscript is suited to Communications Biology because it uses transparent secondary analysis to provide a biological advance of broad relevance to mechanobiology and skeletal research: response magnitude can be reproducibly lineage-localized even when individual transcript directions are context dependent. Dated protocols, study-unit analyses, code, derived data and figure source tables are included.')
     addp(d,'No new human or animal experiments were performed. All participant-level source data were de-identified and publicly released by the original investigators.')
-    placeholder(d,'[CONFIRM ALL AUTHORS APPROVE THE SUBMISSION ORIGINALITY AND NO SIMULTANEOUS SUBMISSION]')
-    addp(d,'Thank you for your consideration.');placeholder(d,'[CORRESPONDING AUTHOR NAME AFFILIATION EMAIL AND SIGNATURE]')
+    addp(d,'The author team comprises Tingting Tan, Xia Chen and Zhengxiao Ouyang; Tingting Tan and Xia Chen contributed equally. All authors have reviewed and approved the manuscript and agree with its submission to Communications Biology. The manuscript is original, has not been published previously and is not under consideration elsewhere. '+FUNDING+' The authors declare no competing interests.')
+    addp(d,'Thank you for your consideration.')
+    addp(d,'Sincerely,\nZhengxiao Ouyang, MD, PhD\nCorresponding author\nDepartment of Orthopedics, The Second Xiangya Hospital, Central South University\n139 Renmin Middle Road, Changsha, Hunan 410011, P.R. China\nEmail: ouyangzhengxiao@csu.edu.cn\nORCID: https://orcid.org/0000-0002-8997-0446')
     d.save(OUT/'Cover_Letter_Communications_Biology.docx')
 
 

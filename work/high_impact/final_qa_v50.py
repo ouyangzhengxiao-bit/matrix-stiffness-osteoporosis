@@ -12,9 +12,16 @@ ck('Monte Carlo P=0.259' in '\n'.join(ps),'combined magnitude missing');ck('12,7
 for h in ['Results','Discussion','Methods','Data availability','Code availability','References']:ck(ps.count(h)==1,f'heading {h} count {ps.count(h)}')
 # placeholders are intentionally limited to author-supplied information
 text='\n'.join(ps);found=re.findall(r'\[[^\]]*(?:AUTHOR|VERIFY)[^\]]*\]',text)
-ck(len(found)<=7,f'unexpected placeholder count {len(found)}')
+ck(len(found)==0,f'unresolved manuscript placeholder count {len(found)}')
 ck('10.5281/zenodo.22726636' in text,'archived release DOI missing')
 ck('[AUTHOR TO PROVIDE REPOSITORY URL AND DOI]' not in text,'repository DOI placeholder remains')
+for expected in ['Tingting Tan','Xia Chen','Zhengxiao Ouyang','These authors contributed equally','chenxiacxv99@csu.edu.cn','ouyangzhengxiao@csu.edu.cn','0000-0002-8997-0446','82371600','82571826','2026JJ20072','2025JJ50614']:
+ ck(expected in text,f'manuscript metadata missing: {expected}')
+all_docx_text=''
+for n in ['Manuscript_Communications_Biology','Supplementary_Information_Communications_Biology','Cover_Letter_Communications_Biology','PRISMA_2020_Checklist','Evidence_Ceiling_Audit_v5']:
+ x=Document(O/f'{n}.docx')
+ all_docx_text+='\n'.join(p.text for p in x.paragraphs)+'\n'+'\n'.join(p.text for t in x.tables for row in t.rows for c in row.cells for p in c.paragraphs)
+ck(not re.search(r'\[(?:AUTHOR|CORRESPONDING|VERIFY|COMPLETE|THE AUTHORS|ACKNOWLEDGEMENTS|DATE|CONFIRM)',all_docx_text),'unresolved submission placeholder remains')
 mc=json.loads((R/'outputs/研究升级/high_impact_v4/multicohort_osteoporosis_validation/multicohort_osteoporosis_validation_summary.json').read_text())
 hu=json.loads((R/'outputs/研究升级/high_impact_v4/human_only_sensitivity/human_only_sensitivity_summary.json').read_text())
 ck(abs(mc['combined']['abs']['monte_carlo_p']-.25886948226103546)<1e-12,'MC mismatch');ck(hu['genes_fdr']==0 and hu['genes_k_ge_3']==12757,'human summary mismatch')
