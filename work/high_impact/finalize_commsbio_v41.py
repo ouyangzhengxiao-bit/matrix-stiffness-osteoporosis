@@ -124,7 +124,7 @@ def manuscript():
     for i,p0 in enumerate(pars):
         if p0.text=='Generative AI disclosure':
             p0._element.getparent().remove(p0._element)
-            if i+1<len(pars) and pars[i+1].text.startswith('[VERIFY AND EDIT:'):
+            if i+1<len(pars) and (pars[i+1].text.startswith('[VERIFY AND EDIT:') or pars[i+1].text.startswith('OpenAI Codex assisted')):
                 pars[i+1]._element.getparent().remove(pars[i+1]._element)
             break
     d.save(p)
