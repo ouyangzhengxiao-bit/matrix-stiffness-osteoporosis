@@ -6,23 +6,31 @@ dir.create(out, recursive = TRUE, showWarnings = FALSE)
 theme_set(theme_classic(base_size = 9, base_family = 'Arial'))
 cols <- c(blue='#2C6EAA', orange='#D87A2C', grey='#9AA1A6')
 
-# a: analysis architecture
+# a: analysis architecture. Use explicit box boundaries so connector arrows
+# terminate in the whitespace between nodes rather than entering the boxes.
 nodes <- data.frame(
-  x = c(1, 2.3, 3.6, 5.0, 6.4), y = 1,
+  x = c(.90, 2.25, 3.68, 5.12, 6.55), y = 1,
+  half_w = c(.40, .45, .49, .40, .49),
+  half_h = c(.25, .21, .25, .21, .21),
   label = c('7 independent\nGEO studies\n13 contrasts',
             'Study-clustered\ngene effects',
             '12,241 genes\nrandom-effects\nmeta-analysis',
             'Human bone\ncell programs',
             'ATAC and eBMD\nfalsification'))
-p1a <- ggplot(nodes, aes(x, y)) +
-  geom_segment(
-    data=data.frame(x=c(1.35,2.65,3.95,5.35), xend=c(1.95,3.25,4.65,6.05), y=1, yend=1),
-    aes(x=x,xend=xend,y=y,yend=yend), arrow=arrow(length=unit(2.2,'mm')),
-    linewidth=.5, colour='#555555') +
-  geom_label(aes(label=label), size=2.65, linewidth=.35,
-             label.padding=unit(.18,'lines'), fill='white') +
+arrows <- data.frame(
+  x = nodes$x[-nrow(nodes)] + nodes$half_w[-nrow(nodes)] + .08,
+  xend = nodes$x[-1] - nodes$half_w[-1] - .12,
+  y = 1, yend = 1)
+p1a <- ggplot() +
+  geom_segment(data=arrows, aes(x=x,xend=xend,y=y,yend=yend),
+               arrow=arrow(length=unit(1.7,'mm'),type='closed'),
+               linewidth=.5, colour='#555555') +
+  geom_rect(data=nodes,
+            aes(xmin=x-half_w,xmax=x+half_w,ymin=y-half_h,ymax=y+half_h),
+            fill='white',colour='black',linewidth=.35) +
+  geom_text(data=nodes,aes(x=x,y=y,label=label),size=2.55,lineheight=.94) +
   annotate('text', x=.58, y=1.42, label='a', fontface='bold', size=4) +
-  coord_cartesian(xlim=c(.48,6.92), ylim=c(.68,1.42), clip='off') +
+  coord_cartesian(xlim=c(.42,7.12), ylim=c(.68,1.42), clip='off') +
   theme_void()
 
 # b: study-level gene-effect concordance
