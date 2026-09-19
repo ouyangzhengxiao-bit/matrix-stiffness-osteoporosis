@@ -12,6 +12,8 @@ Reproducible code, dated protocols, systematic-search records, derived results a
 - Response magnitude localized to osteoblast-lineage programs, with strongest support for the spatial program.
 - A human-only sensitivity analysis preserved the central conclusion.
 - Three independent human osteoporosis cohorts did not support universal cross-cohort transfer of response magnitude, direction or a fixed signature.
+- A model fixed on the earliest three studies failed to predict four later studies (median genome-wide Spearman rho = -0.050; median top-200 directional agreement = 0.493).
+- In an independent 11-donor, four-tissue MSC atlas, the frozen response-magnitude set varied by tissue source but was not enriched in bone-marrow MSCs.
 
 ## Repository contents
 
@@ -19,6 +21,7 @@ Reproducible code, dated protocols, systematic-search records, derived results a
 - `work/high_impact/`: localization, orthogonal validation, disease validation, sensitivity, figure and quality-control scripts.
 - `outputs/研究升级/meta_analysis_v2/`: study-level effects and meta-analysis outputs.
 - `outputs/研究升级/high_impact_v4/`: validation, sensitivity, search-audit and environment outputs.
+- `outputs/研究升级/high_impact_v5/`: chronological transportability and independent multi-donor MSC atlas outputs.
 - `outputs/final_analysis/`: processed matrices needed for the two additional osteoporosis cohorts.
 - `figures/`: publication figures in PNG and PDF formats.
 - `docs/`: PRISMA checklist and evidence-ceiling audit.
@@ -27,12 +30,12 @@ Reproducible code, dated protocols, systematic-search records, derived results a
 
 The analyses use Python 3.14 with package versions in `requirements.txt` and R 4.5.2 with versions recorded in `outputs/研究升级/high_impact_v4/R_package_versions.txt`. Large public source files are not redistributed. Their accessions and SHA-256 hashes are recorded in the input manifests.
 
-The primary public sources include GSE193021, GSE181512, GSE226411, GSE288678, GSE55867, GSE255574 and GSE310514. Validation sources include GSE147390, GSE156508, GSE35958, GSE230665, GSE166824, GSE22011, GSE152708, GSE276529, GSE317531, GSE287556, GSE317069 and GSE299207, plus GWAS Catalog study GCST90726625.
+The primary public sources include GSE193021, GSE181512, GSE226411, GSE288678, GSE55867, GSE255574 and GSE310514. Validation sources include GSE182158, GSE147390, GSE156508, GSE35958, GSE230665, GSE166824, GSE22011, GSE152708, GSE276529, GSE317531, GSE287556, GSE317069 and GSE299207, plus GWAS Catalog study GCST90726625.
 
-Run the version-5 orchestration script after placing the documented public inputs at the relative paths expected by the individual scripts:
+Run the version-6 orchestration script after placing the documented public inputs, including the GSE182158 raw TAR, at the relative paths expected by the individual scripts:
 
 ```bash
-python3 work/high_impact/run_full_pipeline_v50.py
+python3 work/high_impact/run_full_pipeline_v60.py
 ```
 
 Many downstream validation and audit results can be reproduced directly from the included derived matrices. Each protocol records whether it was frozen before its corresponding merge or added as a labelled sensitivity analysis.
@@ -43,7 +46,7 @@ This repository contains original analysis code and derived numerical results. I
 
 ## Citation
 
-For exact reproduction of the manuscript analyses, cite release v1.0.0 using the version DOI [10.5281/zenodo.22726636](https://doi.org/10.5281/zenodo.22726636). The concept DOI [10.5281/zenodo.22726635](https://doi.org/10.5281/zenodo.22726635) resolves to the latest archived release. Citation metadata are also provided in `CITATION.cff`.
+For the original archived analysis, release v1.0.0 remains available at [10.5281/zenodo.22726636](https://doi.org/10.5281/zenodo.22726636). The concept DOI [10.5281/zenodo.22726635](https://doi.org/10.5281/zenodo.22726635) resolves to the latest archived release, including the chronological and multi-donor upgrades. Citation metadata are also provided in `CITATION.cff`.
 
 ## License
 

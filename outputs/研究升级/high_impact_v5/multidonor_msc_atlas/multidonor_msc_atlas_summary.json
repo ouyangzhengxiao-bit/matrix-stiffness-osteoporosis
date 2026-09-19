@@ -1,0 +1,26 @@
+{
+  "dataset": "GSE182158",
+  "donors": 11,
+  "cells_reported_by_source": ">130000",
+  "primary": {
+    "gene_set": "absolute_top200",
+    "mapped_genes": 200,
+    "bone_minus_other_mean_rank": 0.005001575188156138,
+    "exact_two_sided_p": 0.28484848484848485,
+    "four_tissue_between_ss": 0.0004417124337192639,
+    "four_tissue_exact_p": 0.0016233766233766235
+  },
+  "matched_background_sensitivity": {
+    "bone_minus_other": 0.005499369584323455,
+    "exact_two_sided_p": 0.21818181818181817,
+    "four_tissue_between_ss": 0.00036959784508336114,
+    "four_tissue_exact_p": 0.0029870129870129872,
+    "matched_sets": 1000,
+    "seed": 20260919
+  },
+  "interpretation": "not_bone_marrow_specific",
+  "input": {
+    "bytes": 1554186240,
+    "sha256": "4ab8b01407e1c8e5190684f615ef09f34e4ce9283fecd2fecbf6ef9bdae30666"
+  }
+}

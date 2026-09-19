@@ -1,7 +1,15 @@
 {
   "title": "Matrix stiffness transcriptomic responses and osteoporosis: reproducible meta-analysis",
-  "description": "Code, dated protocols, systematic-search records and derived results for a study-clustered transcriptomic meta-analysis of matrix stiffness responses and their relationship to human osteoblast-lineage programs and osteoporosis cohorts. The analyses define the limits of cross-study and cross-cohort transfer and do not constitute a diagnostic test.",
+  "description": "Code, dated protocols, systematic-search records and derived results for a study-clustered transcriptomic meta-analysis of matrix stiffness responses. Version 1.1 adds chronological leave-future-out validation and an independent 11-donor, four-tissue human MSC atlas. The analyses define the limits of cross-study, tissue and osteoporosis-cohort transfer and do not constitute a diagnostic test.",
   "creators": [
+    {
+      "name": "Tan, Tingting",
+      "affiliation": "Department of Orthopedics, The Second Xiangya Hospital, Central South University"
+    },
+    {
+      "name": "Chen, Xia",
+      "affiliation": "Department of Orthopedics, The Second Xiangya Hospital, Central South University"
+    },
     {
       "name": "Ouyang, Zhengxiao",
       "orcid": "0000-0002-8997-0446",
@@ -13,5 +21,5 @@
   "keywords": ["matrix stiffness", "mechanotransduction", "osteoporosis", "transcriptomic meta-analysis", "reproducibility"],
   "upload_type": "software",
   "language": "eng",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

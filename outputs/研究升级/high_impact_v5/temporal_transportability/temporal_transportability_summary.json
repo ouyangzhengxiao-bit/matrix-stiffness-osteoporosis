@@ -1,0 +1,30 @@
+{
+  "fixed_earliest_three": {
+    "tests": 4,
+    "median_spearman_rho": -0.050267885792773505,
+    "rho_range": [
+      -0.2725244548043278,
+      0.06907115607978212
+    ],
+    "positive_rho_tests": 2,
+    "median_top200_directional_agreement": 0.49250000000000005,
+    "agreement_range": [
+      0.245,
+      0.57
+    ]
+  },
+  "sequential_expanding": {
+    "tests": 4,
+    "median_spearman_rho": -0.011191746536448175,
+    "rho_range": [
+      -0.2725244548043278,
+      0.0661317147245827
+    ],
+    "positive_rho_tests": 2,
+    "median_top200_directional_agreement": 0.52,
+    "agreement_range": [
+      0.245,
+      0.54
+    ]
+  }
+}
