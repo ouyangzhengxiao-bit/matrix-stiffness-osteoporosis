@@ -46,7 +46,7 @@ This repository contains original analysis code and derived numerical results. I
 
 ## Citation
 
-For the original archived analysis, release v1.0.0 remains available at [10.5281/zenodo.22726636](https://doi.org/10.5281/zenodo.22726636). The concept DOI [10.5281/zenodo.22726635](https://doi.org/10.5281/zenodo.22726635) resolves to the latest archived release, including the chronological and multi-donor upgrades. Citation metadata are also provided in `CITATION.cff`.
+For exact reproduction of the upgraded analyses, cite release v1.1.0 at [10.5281/zenodo.22839453](https://doi.org/10.5281/zenodo.22839453). The original v1.0.0 release remains available at [10.5281/zenodo.22726636](https://doi.org/10.5281/zenodo.22726636), and the concept DOI [10.5281/zenodo.22726635](https://doi.org/10.5281/zenodo.22726635) resolves to the latest archived release. Citation metadata are also provided in `CITATION.cff`.
 
 ## License
 
