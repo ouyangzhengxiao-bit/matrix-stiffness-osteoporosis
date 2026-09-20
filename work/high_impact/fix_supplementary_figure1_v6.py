@@ -63,21 +63,21 @@ validation = box(9.0, 3.35, 5.1, 1.35,
                  'GSE147390; one donor\n'
                  'n = 5,329 osteoblasts', dashed=True, fontsize=7.1)
 
-# Merge both identification routes into screening without crossing boxes.
-arrow(db['cx'], db['cy']-db['h']/2, screen['cx']-.55, screen['cy']+screen['h']/2)
-arrow(add['cx'], add['cy']-add['h']/2, screen['cx']+.55, screen['cy']+screen['h']/2)
-arrow(screen['cx']+screen['w']/2, screen['cy'],
-      ex_title['cx']-ex_title['w']/2, ex_title['cy'])
-arrow(screen['cx'], screen['cy']-screen['h']/2,
-      full['cx'], full['cy']+full['h']/2)
-arrow(full['cx']+full['w']/2, full['cy'],
-      ex_full['cx']-ex_full['w']/2, ex_full['cy'])
-arrow(full['cx'], full['cy']-full['h']/2,
-      included['cx'], included['cy']+included['h']/2)
-
-ax.text(9.0, 2.35,
-        'Dashed box denotes an external validation dataset,\nnot an additional study in the quantitative synthesis.',
-        ha='center', va='top', fontsize=6.7, color='#444444')
+# Keep a visible gap at both ends of every connector. Arrow shafts and heads do
+# not touch the box outlines, which prevents apparent overlap after reduction.
+gap = .14
+arrow(db['cx'], db['cy']-db['h']/2-gap,
+      screen['cx']-.55, screen['cy']+screen['h']/2+gap)
+arrow(add['cx'], add['cy']-add['h']/2-gap,
+      screen['cx']+.55, screen['cy']+screen['h']/2+gap)
+arrow(screen['cx']+screen['w']/2+gap, screen['cy'],
+      ex_title['cx']-ex_title['w']/2-gap, ex_title['cy'])
+arrow(screen['cx'], screen['cy']-screen['h']/2-gap,
+      full['cx'], full['cy']+full['h']/2+gap)
+arrow(full['cx']+full['w']/2+gap, full['cy'],
+      ex_full['cx']-ex_full['w']/2-gap, ex_full['cy'])
+arrow(full['cx'], full['cy']-full['h']/2-gap,
+      included['cx'], included['cy']+included['h']/2+gap)
 
 fig.subplots_adjust(left=.025, right=.985, top=.98, bottom=.03)
 fig.savefig(OUT/'Supplementary_Figure_1_PRISMA.png', dpi=600,
